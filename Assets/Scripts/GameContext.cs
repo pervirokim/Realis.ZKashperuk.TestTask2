@@ -59,6 +59,9 @@ public class GameContext : MonoBehaviour
 
     private void OnSwipeGesture(Vector2 direction)
     {
+        if (!_canMove)
+            return;
+
         _canMove = false;
         List<Brick> orderedBySwipeDirection = cells
             .Select(c => c.GetBrick())
