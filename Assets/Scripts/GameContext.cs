@@ -174,7 +174,7 @@ public class GameContext : MonoBehaviour
             _board.transform.position.y,
             Camera.main.transform.position.z);
 
-        Camera.main.orthographicSize = math.max(gridColumns, gridRows) * 2;
+        Camera.main.orthographicSize = math.max(gridColumns, gridRows) * 3;
 
 
         GenerateBrick(bricksInitCount);
